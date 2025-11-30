@@ -7,7 +7,7 @@
 // }
 
 const UserRules = {
-  Admin: "Admin",
+  Admin: "ADMIN",
   Editor: "Editor",
   Viewer: "Viewer",
 } as const;
@@ -16,7 +16,7 @@ const UserRules = {
 // 1. typeof
 // 2. keyof
 
-const canEdit = (role: keyof typeof UserRules) => {
+const canEdit = (role: (typeof UserRules)[keyof typeof UserRules]) => {
   if (role === UserRules.Admin || role === UserRules.Editor) return true;
   else return false;
 };
