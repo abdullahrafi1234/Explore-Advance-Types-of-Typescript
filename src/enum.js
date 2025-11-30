@@ -1,5 +1,5 @@
 // enum
-// set of fixed string literal
+// set of fixed string literal type
 // type UserRules = "Admin" | "Editor" | "Viewer";
 var UserRules;
 (function (UserRules) {
