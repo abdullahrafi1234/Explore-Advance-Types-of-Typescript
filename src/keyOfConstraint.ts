@@ -43,6 +43,7 @@ const myAddress = user["address"];
 // const getPropertyFromObjectKeyof = (obj: User, key: keyof User) => {
 //   return obj[key];
 // };
+
 const getPropertyFromObject = <X>(obj: X, key: keyof X) => {
   return obj[key];
 };
